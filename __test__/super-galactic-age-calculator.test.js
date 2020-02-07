@@ -31,7 +31,12 @@ describe('AgeCalculator', () => {
     expect(userAge.lifeExpectancyAtBirth()).toBe(66);
   });
 
-  test('should correctly determine user life expectancy at birth.', () => {
+  test('should correctly determine user life expectancy by region.', () => {
     expect(userAge.lifeExpectancyByRegoin()).toBe(61);
   });
+
+  test('should correctly display either how many years they have left or how many years they have surpassed the average life expectancy', () => {
+    expect(userAge.lifeExpectancy()).toEqual(31);
+  });
+
 });

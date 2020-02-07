@@ -24,8 +24,9 @@ This application translates a user's age of the earth into that of another plane
 | Application calculates user's age (round if decimal) in Venus years.  <br/>(A Venus year is 0.62 Earth years.) | 30 | Venus Years: 48 |
 | Application calculates user's age (round if decimal) in Mars years.  <br/>(A Mars year is 1.88 Earth years.) | 30 | Mars Years: 16 |
 | Application calculates user's age (round if decimal) in Jupiter years.  <br/>(A Jupiter year is 11.86 Earth years.) | 30 | Jupiter Years: 3 |
-| Application determaines user's life expectancy measured by region | United States | 79 years |
-| Application displays either how many years they have left or how many years they have surpassed the average life expectancy on each planet | 30, <br/> United States | Life Expectance : 79 years <br /> -Left years your life- <br /> Earth: 49 years <br/> Mercury: 204 years <br/> Venus: 79 years<br/> Mars: 26 years<br/> Jupiter: 4 years |
+| Application determaines user's life expectancy measured at birth | 30 | 66 years |
+| Application determaines user's life expectancy measured by region | Africa | 61 years |
+| Application displays either how many years they have left or how many years they have surpassed the average life expectancy on each planet | 30, <br/> Africa | Life Expectance : 61 years <br /> -Left years your life- <br /> Earth: 31 years <br/> Mercury: 129 years <br/> Venus: 50 years<br/> Mars: 16 years<br/> Jupiter: 3 years |
 
 
 
