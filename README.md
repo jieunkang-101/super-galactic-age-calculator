@@ -17,14 +17,15 @@ This application translates a user's age of the earth into that of another plane
 
 ## Behavior Driven Development Specifications
 
-| Behavior (Spec)                 | Input     | Output |
-| :------------------------------ | :-------: | :----: |
-| Application calculates user's age (round if decimal) in Mercury years. (A Mercury year is 0.24 Earth years.) | 30 | Mercury Years: 125 |
-| Application calculates user's age (round if decimal) in Venus years. (A Venus year is 0.62 Earth years.) | 30 | Venus Years: 48 |
-| Application calculates user's age (round if decimal) in Mars years. (A Mars year is 1.88 Earth years.) | 30 | Mars Years: 16 |
-| Application calculates user's age (round if decimal) in Jupiter years. (A Jupiter year is 11.86 Earth years.) | 30 | Jupiter Years: 3 |
-| Application determaines user's life expectancy measured by region | United States | 79 |
-| Application displays either how many years they have left or how many years they have surpassed the average life expectancy on each planet | 30, United States | Life Expectance : 79 <br /> left years your life <br /> Earth: 49 <br/> Mercury: 204 <br/> Venus: 79 <br/> Mars: 26 <br/> Jupiter: 4|
+| Behavior (Spec)   | Input   | Output  |
+| :---------------- | :-----: | :-----: |
+|<img width=800/>|<img width=300/>|<img width=600/>
+| Application calculates user's age (round if decimal) in Mercury years. <br/>(A Mercury year is 0.24 Earth years.) | 30 | Mercury Years: 125 |
+| Application calculates user's age (round if decimal) in Venus years.  <br/>(A Venus year is 0.62 Earth years.) | 30 | Venus Years: 48 |
+| Application calculates user's age (round if decimal) in Mars years.  <br/>(A Mars year is 1.88 Earth years.) | 30 | Mars Years: 16 |
+| Application calculates user's age (round if decimal) in Jupiter years.  <br/>(A Jupiter year is 11.86 Earth years.) | 30 | Jupiter Years: 3 |
+| Application determaines user's life expectancy measured by region | United States | 79 years |
+| Application displays either how many years they have left or how many years they have surpassed the average life expectancy on each planet | 30, United States | Life Expectance : 79 years <br /> -Left years your life- <br /> Earth: 49 years <br/> Mercury: 204 years <br/> Venus: 79 years<br/> Mars: 26 years<br/> Jupiter: 4 years |
 
 
 
