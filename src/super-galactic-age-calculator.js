@@ -24,6 +24,13 @@ export class AgeCalculator {
   }
 
   lifeExpectancyAtBirth() {
+    for(var i = 0; i < 10; i++) {
+      if(this.age >= 100) {
+        this.age = 50;
+      } else if(this.age >= i*10 && this.age < (i+1)*10) {
+        return this.age = 72 - ( i * 2);
+      } 
+    }
     
   }
 };
