@@ -20,4 +20,8 @@ describe('AgeCalculator', () => {
     expect(userAge.venusAge()).toBe(48);
   });
 
+  test('should correctly determine user age in Mars years.', () => {
+    expect(userAge.marsAge()).toBe(16);
+  });
+
 });

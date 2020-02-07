@@ -15,4 +15,9 @@ export class AgeCalculator {
     const userAge = Math.round(this.age / this.planet);
     return userAge;
   }
+
+  marsAge() {
+    
+  }
+
 };
