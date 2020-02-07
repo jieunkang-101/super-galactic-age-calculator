@@ -22,4 +22,11 @@ export class AgeCalculator {
     return userAge;
   }
 
+  jupiterAge() {
+    this.planet = 11.86;
+    const userAge = Math.round(this.age / this.planet);
+    return userAge;
+
+  }
+
 };
