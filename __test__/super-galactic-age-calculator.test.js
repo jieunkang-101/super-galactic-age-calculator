@@ -1,15 +1,18 @@
 import { AgeCalculator } from './../src/super-galactic-age-calculator';
 
 describe('AgeCalculator', () => {
+  let userAge;
+
+  beforeEach(() => {
+    userAge = new AgeCalculator(30, "this.planet");
+  });
 
   test('should correctly create a ageCalculaaor object with a age and a planet', () => {
-    const ageCalculator = new AgeCalculator(30, 0.24);
-    expect(ageCalculator.age).toBe(30);
-    expect(ageCalculator.planet).toBe(0.24);
+    expect(userAge.age).toBe(30);
+    expect(userAge.planet).toBe("this.planet");
   });
 
   test('should correctly determine user age in Mercury years.', () => {
-    const userAge = new AgeCalculator(30);
     expect(userAge.mercuryAge()).toBe(125);
   });
 
