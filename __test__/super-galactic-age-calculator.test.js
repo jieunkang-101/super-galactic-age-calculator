@@ -26,4 +26,8 @@ describe('AgeCalculator', () => {
   test('should correctly determine user age in Jupiter years.', () => {
     expect(userAge.jupiterAge()).toBe(3);
   });
+
+  test('should correctly determine user life expectancy at birth.', () => {
+    expect(userAge.lifeExpectancyAtBirth()).toBe(68);
+  });
 });

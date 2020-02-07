@@ -14,16 +14,16 @@ export class AgeCalculator {
   }
 
   marsAge() {
-    //this.planet = 1.88;
     const userAge = Math.round(this.age / 1.88);
     return userAge;
   }
 
   jupiterAge() {
-    //this.planet = 11.86;
     const userAge = Math.round(this.age / 11.86);
     return userAge;
   }
 
-  
+  lifeExpectancyAtBirth() {
+    
+  }
 };
