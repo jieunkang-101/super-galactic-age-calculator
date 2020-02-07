@@ -16,4 +16,8 @@ describe('AgeCalculator', () => {
     expect(userAge.mercuryAge()).toBe(125);
   });
 
+  test('should correctly determine user age in Venus years.', () => {
+    expect(userAge.venusAge()).toBe(48);
+  });
+
 });
