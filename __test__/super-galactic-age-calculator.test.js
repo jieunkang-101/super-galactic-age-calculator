@@ -4,12 +4,11 @@ describe('AgeCalculator', () => {
   let userAge;
 
   beforeEach(() => {
-    userAge = new AgeCalculator(30, "this.planet");
+    userAge = new AgeCalculator(30);
   });
 
   test('should correctly create a ageCalculaaor object with a age and a planet', () => {
     expect(userAge.age).toBe(30);
-    expect(userAge.planet).toBe("this.planet");
   });
 
   test('should correctly determine user age in Mercury years.', () => {

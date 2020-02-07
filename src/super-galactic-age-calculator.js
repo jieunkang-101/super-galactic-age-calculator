@@ -1,32 +1,29 @@
 export class AgeCalculator {
-  constructor(age, planet) {
+  constructor(age) {
     this.age = age;
-    this.planet = planet;
   }
 
   mercuryAge() {
-    this.planet = 0.24;
-    const userAge = Math.round(this.age / this.planet);
+    const userAge = Math.round(this.age / 0.24);
     return userAge;
   }
 
   venusAge() {
-    this.planet = 0.62;
-    const userAge = Math.round(this.age / this.planet);
+    const userAge = Math.round(this.age / 0.62);
     return userAge;
   }
 
   marsAge() {
-    this.planet = 1.88;
-    const userAge = Math.round(this.age / this.planet);
+    //this.planet = 1.88;
+    const userAge = Math.round(this.age / 1.88);
     return userAge;
   }
 
   jupiterAge() {
-    this.planet = 11.86;
-    const userAge = Math.round(this.age / this.planet);
+    //this.planet = 11.86;
+    const userAge = Math.round(this.age / 11.86);
     return userAge;
-
   }
 
+  
 };
