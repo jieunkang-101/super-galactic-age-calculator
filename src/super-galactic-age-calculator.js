@@ -1,6 +1,7 @@
 export class AgeCalculator {
-  constructor(age) {
+  constructor(age, region) {
     this.age = age;
+    this.region = region;
   }
 
   mercuryAge() {
@@ -31,6 +32,10 @@ export class AgeCalculator {
         return this.age = 72 - ( i * 2);
       } 
     }
-    
   }
+
+  lifeExpectancyByRegoin() {
+
+  }
+
 };

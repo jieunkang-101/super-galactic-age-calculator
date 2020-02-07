@@ -4,7 +4,7 @@ describe('AgeCalculator', () => {
   let userAge;
 
   beforeEach(() => {
-    userAge = new AgeCalculator(30);
+    userAge = new AgeCalculator(30, "Af");
   });
 
   test('should correctly create a ageCalculaaor object with a age and a planet', () => {
@@ -29,5 +29,9 @@ describe('AgeCalculator', () => {
 
   test('should correctly determine user life expectancy at birth.', () => {
     expect(userAge.lifeExpectancyAtBirth()).toBe(66);
+  });
+
+  test('should correctly determine user life expectancy at birth.', () => {
+    expect(userAge.lifeExpectancyByRegoin()).toBe(61);
   });
 });
