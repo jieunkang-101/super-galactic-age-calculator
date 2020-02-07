@@ -4,5 +4,7 @@ export function AgeCalculator(age, planet) {
 }
 
 AgeCalculator.prototype.mercuryAge = function() {
- // return userAge;
+  this.planet = 0.24;
+  const userAge = Math.round(this.age / this.planet);
+  return userAge;
 }
