@@ -35,7 +35,20 @@ export class AgeCalculator {
   }
 
   lifeExpectancyByRegoin() {
+    let _this = this;
+    let regionAge = _this.lifeExpectancyAtBirth(this.age);
 
+    if(this.region === "NA" || this.regionAge === "EU") {
+      regionAge += 5;
+    } else if(this.region === "LA") {
+      regionAge += 3;
+    } else if(this.region === "Asia") {
+      regionAge += 1;
+    } else {
+      regionAge -= 5;
+    } return regionAge;
   }
+
+
 
 };
