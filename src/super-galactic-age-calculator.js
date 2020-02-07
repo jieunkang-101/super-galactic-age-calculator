@@ -10,4 +10,9 @@ export class AgeCalculator {
     return userAge;
   }
 
+  venusAge() {
+    this.planet = 0.62;
+    const userAge = Math.round(this.age / this.planet);
+    return userAge;
+  }
 };
