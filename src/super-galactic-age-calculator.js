@@ -42,11 +42,11 @@ export class AgeCalculator {
   lifeExpectancyByRegoin() {
     let _this = this;
     this.expectedAgeRegion = _this.lifeExpectancyAtBirth(this.age);
-    if(this.region === "NA" || this.regionAge === "EU") {
+    if(this.region === "NA" || this.regionAge === "EU" || this.regionAge === "OC") {
       this.expectedAgeRegion += 5;
     } else if(this.region === "LA") {
       this.expectedAgeRegion += 3;
-    } else if(this.region === "Asia") {
+    } else if(this.region === "AS") {
       this.expectedAgeRegion += 1;
     } else {
       this.expectedAgeRegion -= 5;
@@ -62,5 +62,4 @@ export class AgeCalculator {
       this.age = this.age - this.expectedAge;
     } return this.age;
   }  
-
-};
+}

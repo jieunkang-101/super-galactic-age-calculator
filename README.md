@@ -13,7 +13,6 @@ This application translates a user's age of the earth into that of another plane
 2. Clone this repository to your local machine `("git clone https://github.com/jieunkang-101/super-galactic-age-calculator.git")`.
 3. Open cloned directory in Visual Studio Code or preferred text editor `("code .")`.
 4. Open `index.html` in Chrome or preferred browser.
-* _View working page at_ https://jieunkang-101.github.io/super-galactic-age-calculator
 
 ## Behavior Driven Development Specifications
 
