@@ -17,15 +17,17 @@
         <button type="submit" class="btn btn-info" id="inputAgeBtn">Submit</button>
       </form>
       <div id="outputPlanetAge">
+        <p>Age on each planet</p>
         <p>Mercury Years: <span id="mercuryAge"></span></p>
         <p>Venus Years: <span id="venusAge"></span></p>
         <p>Mars Years: <span id="marsAge"></span></p>
         <p>Jupiter Years:<span id="jupiterAge"></span></p>
       </div>
+      <br>
       <form id="lifeExpectancy">
         <label for="inputRegion">Select the continent you live on</label>
         <select name="region">
-          <option disavled>Click here</option>
+          <option disabled>Click here</option>
           <option value="NA">Northern America</option>
           <option value="EU">Europe</option>
           <option value="LA">Latin America</option>
@@ -35,22 +37,23 @@
           <input class="editOption" style="display:none;"></input>
         </select>
       </form>
-      <h3>Life Expectancy</h3>
-      <div id="outputYoung">
-        <p><span id="lifeYears"></span> year is expected to left for your live, based on your current age and the region you live on.</p>
-        <p>Your life expectancy on each planet!</p>
-      </div>
-      <div id="outputOld">
-        <p>You have already <span id="lifeYears"></span> years surpassed the average life expectancy, based on your current age and the region you live on.</p>
-        <p>Your surpassed life expectancy on each planet!</p>
-      </div>
-      <div id="outputYears">
+      
+      <div class="display hidden" id="outputYoung">
+        <p><span id="result"></span></p>
         <p>Earth: <span id="earthYears"></span></p>
         <p>Mercury: <span id="mercuryYears"></span></p>
         <p>Venus: <span id="venusYears"></span></p>
         <p>Mars: <span id="marsYears"></span></p>
         <p>Jupiter:<span id="jupiterYears"></span></p>
       </div>
+      <!-- <div id="outputOld">
+        <p>Bonus years lived on each planet!</p>
+        <p>Earth: <span id="earthYears"></span></p>
+        <p>Mercury: <span id="mercuryYears"></span></p>
+        <p>Venus: <span id="venusYears"></span></p>
+        <p>Mars: <span id="marsYears"></span></p>
+        <p>Jupiter:<span id="jupiterYears"></span></p>
+      </div> -->
     </div>
   </body>
 </html>
