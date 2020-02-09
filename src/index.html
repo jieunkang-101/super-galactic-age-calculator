@@ -3,7 +3,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script type="text/javascript" src="bundle.js"></script>
     <title>Age Calculator</title>
   </head>
   <body>
@@ -16,8 +15,9 @@
         <input id="inputAge" type="number" min="0" />
         <button type="submit" class="btn btn-info" id="inputAgeBtn">Submit</button>
       </form>
+      <br>
       <div id="outputPlanetAge">
-        <p>Age on each planet</p>
+        <h4>Age on each planet</h4>
         <p>Mercury Years: <span id="mercuryAge"></span></p>
         <p>Venus Years: <span id="venusAge"></span></p>
         <p>Mars Years: <span id="marsAge"></span></p>
@@ -27,7 +27,7 @@
       <form id="lifeExpectancy">
         <label for="inputRegion">Select the continent you live on</label>
         <select name="region">
-          <option disabled>Click here</option>
+          <option>Click here</option>
           <option value="NA">Northern America</option>
           <option value="EU">Europe</option>
           <option value="LA">Latin America</option>
@@ -37,23 +37,16 @@
           <input class="editOption" style="display:none;"></input>
         </select>
       </form>
-      
-      <div class="display hidden" id="outputYoung">
-        <p><span id="result"></span></p>
+      <div class="hidden">
+      <h4>Life Expectancy: <span id="result"></span></h4>
+        <p id="outputYoung">Life expectancy on each planet!</p>
+        <p id="outputOld">Bonus years lived on each planet!</p>
         <p>Earth: <span id="earthYears"></span></p>
         <p>Mercury: <span id="mercuryYears"></span></p>
         <p>Venus: <span id="venusYears"></span></p>
         <p>Mars: <span id="marsYears"></span></p>
         <p>Jupiter:<span id="jupiterYears"></span></p>
-      </div>
-      <!-- <div id="outputOld">
-        <p>Bonus years lived on each planet!</p>
-        <p>Earth: <span id="earthYears"></span></p>
-        <p>Mercury: <span id="mercuryYears"></span></p>
-        <p>Venus: <span id="venusYears"></span></p>
-        <p>Mars: <span id="marsYears"></span></p>
-        <p>Jupiter:<span id="jupiterYears"></span></p>
-      </div> -->
+      </div>  
     </div>
   </body>
 </html>

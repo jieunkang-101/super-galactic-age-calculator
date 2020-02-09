@@ -19,9 +19,8 @@ This application translates a user's age of the earth into that of another plane
 
 ## Behavior Driven Development Specifications
 
-| Behavior (Spec)   | Input   | Output  |
+| Behavior(Spec)<img width=800/>  | Input<img width=300/>  | Output<img width=600/>  |
 | :---------------- | :-----: | :-----: |
-|<img width=800/>|<img width=300/>|<img width=600/>
 | Application calculates user's age (round if decimal) in Mercury years. <br/>(A Mercury year is 0.24 Earth years.) | 30 | Mercury Years: 125 |
 | Application calculates user's age (round if decimal) in Venus years.  <br/>(A Venus year is 0.62 Earth years.) | 30 | Venus Years: 48 |
 | Application calculates user's age (round if decimal) in Mars years.  <br/>(A Mars year is 1.88 Earth years.) | 30 | Mars Years: 16 |

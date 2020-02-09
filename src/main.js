@@ -1,8 +1,8 @@
 import { AgeCalculator } from './super-galactic-age-calculator.js';
-import './styles.css';
 import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './styles.css';
 
 $(document).ready(function() {
 
@@ -19,20 +19,28 @@ $(document).ready(function() {
     $("#venusAge").text(venusAge);
     $("#marsAge").text(marsAge);
     $("#jupiterAge").text(jupiterAge);
+    $(".hidden").hide();
   });
 
   $('select[name="region"]').change(function (e) {
+    $(".hidden").show();
     const userAge = parseInt($("#inputAge").val()); 
     const newAge = new AgeCalculator(userAge, e.target.value);
-    const expectedAge = newAge.lifeExpectancy();
-    const lifeYears = new AgeCalculator(expectedAge, e.target.value); 
+    const lifeExpectancyAge = newAge.lifeExpectancyByRegoin();
+    const leftAge = newAge.lifeExpectancy();
+    const lifeYears = new AgeCalculator(leftAge); 
 
-    $("#result").text("Life expectancy on each planet!");
-    $("#earthYears").text(expectedAge);
+    if ( userAge < lifeExpectancyAge) {
+      $("#outputYoung").show(); 
+    } else {
+      $("#outputOld").show(); 
+    }
+
+    $("#result").text(lifeExpectancyAge);
+    $("#earthYears").text(leftAge);
     $("#mercuryYears").text(lifeYears.mercuryAge());
     $("#venusYears").text(lifeYears.venusAge());
     $("#marsYears").text(lifeYears.marsAge());
     $("#jupiterYears").text(lifeYears.jupiterAge());
   });
-
 });    

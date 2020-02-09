@@ -4,7 +4,6 @@ export class AgeCalculator {
   constructor(age, region) {
     this.age = age || 0;
     this.region = region;
-    this.expectedAge = this.expectedAge;
   }
 
   //to calculate galactic years
@@ -49,30 +48,30 @@ export class AgeCalculator {
 
   //to calculate the final life expectancy 
   lifeExpectancyByRegoin() {
-    this.expectedAge = this.lifeExpectancyAtBirth(this.age);
+    let expectedAge = this.lifeExpectancyAtBirth(this.age);
  
     if(this.region === "NA" || this.region === "EU" || this.region === "OC") {
-      this.expectedAge += 5;
+      expectedAge += 5;
     } else if(this.region === "LA") {
-      this.expectedAge += 3;
+      expectedAge += 3;
     } else if(this.region === "AS") {
-     this. expectedAge += 1;
+       expectedAge += 1;
     } else {
-      this.expectedAge -= 5;
+      expectedAge -= 5;
     }
     
-    return this.expectedAge;
+    return expectedAge;
   }
 
   //to calculate the how many years left of surpassed the life expectany
   lifeExpectancy() {
-    this.expectedAge = this.lifeExpectancyByRegoin();
+    let expectedAge = this.lifeExpectancyByRegoin();
     let result = 0;
 
-    if (this.age <= this.expectedAge) {
-      result = this.expectedAge - this.age;
+    if (this.age <= expectedAge) {
+      result = expectedAge - this.age;
     } else {
-      result = this.age - this.expectedAge;
+      result = this.age - expectedAge;
     }
     
     return result;
