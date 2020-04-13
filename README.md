@@ -10,8 +10,8 @@ This application translates a user's age of the earth into that of another plane
 ## Setup/Installation Requirements
 
 1. Open Terminal and go to the Desktop directory `("cd desktop")`.
-2. Clone this repository to your local machine `("git clone _Project-Repo-Here_")`.
-3. Once the directory is clonded to your local machine, go to the root directory of this project `("cd _Project-Repo-Here_")`.
+2. Clone this repository to your local machine `("git clone https://github.com/jieunkang-101/super-galactic-age-calculator")`.
+3. Once the directory is clonded to your local machine, go to the root directory of this project `("cd super-galactic-age-calculator")`.
 4. Type  `("npm install")` to add the correct Node modules and download necessary dependencies to the project.
 5. Type `("npm run build")` to create _dist_ folder with `bundle.js` file using webpack.
 6. Open cloned directory in Visual Studio Code or preferred text editor `("code .")`.
